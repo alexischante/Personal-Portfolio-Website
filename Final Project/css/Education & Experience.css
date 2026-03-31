@@ -1,0 +1,155 @@
+/* Sets the background image for the entire HTML document */
+html {
+    background-image: url("../images/EEimages/opt3.jpeg"); /* Applies background image */
+    background-repeat: no-repeat; /* Prevents image from repeating */
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-position: center; /* Centers the background image */
+    min-height: 100%; /* Ensures the background covers full height */
+}
+
+/* Styles for h1 and h2 elements */
+h1, h2 {
+    font-family: "Inter", sans-serif; /* Uses Inter font */
+    font-optical-sizing: auto;
+    font-weight: 900; /* Makes text bold */
+    font-style: normal;
+    text-transform: uppercase; /* Converts text to uppercase */
+}
+
+/* Styles the navigation bar */
+nav {
+    display: flex; /* Uses flexbox for alignment */
+    flex-direction: row; /* Arranges items in a row */
+    justify-content: stretch; /* Distributes items evenly */
+    float: right; /* Aligns nav to the right */
+}
+
+/* Styles the navigation links */
+nav a.click-btn {
+    display: inline-flex;
+    width: 120px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15px;
+    line-height: 35px;
+    border: none; /* No border */
+    border-radius: 5px;
+    font-size: 18px;
+    color: white ; 
+    text-decoration: none;
+    transition: all 0.35s;
+    box-sizing: border-box;
+    position: relative;
+    background: transparent;
+  }
+  
+  nav a.btn-style1:hover {
+    transform: translateY(-0.25em);
+    color: white;
+  }
+  
+  nav a.btn-style1::before {
+    width: 100%;
+    height: 1em;
+    position: absolute;
+    left: 0;
+    bottom: -1.35em;
+    background: radial-gradient(ellipse at center,rgba(0, 0, 0, 0.35) 0%,rgba(0, 0, 0, 0) 80%);
+    opacity: 0;
+    transition: all 0.65s;
+    content: "";
+  }
+  
+  nav a.btn-style1:hover::before {
+    opacity: 1;
+  }
+
+/* Styles the entire table */
+table {
+    border: solid 1pt black; /* Adds a solid black border */
+    border-collapse: collapse; /* Removes gaps between table cells */
+}
+
+/* Styles table cells */
+td {
+    border: solid 1pt black; /* Adds a border to table cells */
+}
+
+/* Changes the row color when hovered */
+tbody tr:hover {
+    background-color: white; /* Changes background to white */
+    color: blueviolet; /* Changes text color to blueviolet */
+}
+
+/* Styles alternating table rows */
+tbody tr:nth-child(even) {
+    background-color: rgba(192, 147, 189, 0.506); /* Light purple background for even rows */
+}
+
+/* Creates a flex container for work items */
+.work {
+    display: flex; /* Uses flexbox layout */
+    position: relative; /* Allows positioning of child elements */
+}
+
+/* Styles images inside the work section */
+.work-image {
+    width: 150px; /* Sets width */
+    height: 100px; /* Sets height */
+    margin-right: 1em; /* Adds spacing between image and text */
+}
+
+/* Adds spacing above specific elements */
+#fbmedia, #nats {
+    margin-top: 1em; /* Adds spacing above these elements */
+}
+
+/* Styles span elements */
+span {
+    font-weight: normal; /* Resets font weight */
+    font-style: italic; /* Makes text italic */
+}
+
+/* Ensures h3 and h4 elements appear inline */
+h3, h4 {
+    display: inline-block;
+}
+
+/* Styles h4 elements */
+h4 {
+    color: black; /* Sets text color to gray */
+    font-weight: 400; /* Normal font weight */
+    font-style: normal;
+    right: 0; /* Aligns element to the right */
+    margin-right: 1em; /* Adds right margin */
+    position: absolute; 
+}
+
+.heart-container {
+    position: relative;
+    top: 0; /* Removes any extra space above the table */
+    left: 0%; /* Moves it closer to the right */
+    margin-bottom: 20px;
+  }
+  
+  .heart-button {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    font-size: 32px;
+    color: black;
+  }
+  
+  .heart-button::before {
+    content: "♡"; /* empty heart */
+    font-size: 32px;
+    transition: color 0.3s ease;
+  }
+  
+  .heart-button.clicked::before {
+    content: "♥"; /* filled heart */
+    color: red;
+    font-size: 32px
+  }

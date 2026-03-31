@@ -1,0 +1,146 @@
+/* Sets the background color and image */  
+body {
+    background-color: rgb(197, 117, 211);
+    background-image: url("../images/PPimages/Project Image.jpeg");
+    background-size: 100%; /* Ensures the background image covers the full width */
+    background-repeat: no-repeat;
+    color: white; /* Sets text color to white for contrast */
+    height: 100%;
+    padding-left: 20px; /* Adds left padding */
+    margin-top: 0%;
+    overflow: hidden; /* Prevents scrollbars */
+}
+
+/* Styles the navigation bar */
+nav {
+    display: flex; /* Uses flexbox for layout */
+    flex-direction: row; /* Aligns items in a row */
+    justify-content: stretch; /* Stretches navigation links */
+    float: right; /* Aligns nav to the right */
+}
+
+/* Styles the navigation links */
+nav a.click-btn {
+    display: inline-flex;
+    width: 120px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15px;
+    line-height: 35px;
+    border: none; /* No border */
+    border-radius: 5px;
+    font-size: 18px;
+    color: white ; 
+    text-decoration: none;
+    transition: all 0.35s;
+    box-sizing: border-box;
+    position: relative;
+    background: transparent;
+  }
+  
+  nav a.btn-style1:hover {
+    transform: translateY(-0.25em);
+    color: white;
+  }
+  
+  nav a.btn-style1::before {
+    width: 100%;
+    height: 1em;
+    position: absolute;
+    left: 0;
+    bottom: -1.35em;
+    background: radial-gradient(ellipse at center,rgba(0, 0, 0, 0.35) 0%,rgba(0, 0, 0, 0) 80%);
+    opacity: 0;
+    transition: all 0.65s;
+    content: "";
+  }
+  
+  nav a.btn-style1:hover::before {
+    opacity: 1;
+  }
+
+
+/* Styles the navigation logo */
+nav img {
+    width: 200px; /* Sets image width */
+    height: 100px; /* Sets image height */
+    margin-top: -30px; /* Moves image up */
+    margin-left: -1000px; /* Moves image left */
+    position: fixed; /* Keeps it fixed in place */
+}
+
+h1 {
+    padding-top: 60px; /* Adds spacing from the top */
+    padding-left: 20px; /* Indents heading slightly */
+}
+
+/* Styles the sidebar */
+aside {
+    padding: 15px;
+    max-width: 300px;
+    max-height: 100%; /* Ensures it doesn’t exceed page height */
+    float: right; /* Moves it to the right side */
+    color: white; /* White text for visibility */
+    padding-top: 27%; /* Moves it down */
+}
+
+/* Styles the sidebar image */
+aside img {
+    width: 250px;
+    height: 200px;
+    margin-top: -15px; /* Moves image up */
+    margin-left: 20px; /* Centers image slightly */
+}
+
+/* Styles the main section containing images */
+section {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 425px; /* Moves section down */
+    left: 5px; /* Aligns section slightly */
+    width: 100%; 
+}
+/* Styles images within the section */
+section img {
+    background-image: url("../images/PPimages/design.jpeg"); /* Sets background for images */
+    background-position: left bottom; /* Aligns background */
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-left: -877px; /* Moves image left */
+    margin-top: -100px; /* Moves image up */
+    max-width: 100%; /* Ensures images don’t overflow */
+}
+
+/* Styles the footer */
+footer {
+    justify-content: center; /* Centers content */
+    align-items: center;
+    position: fixed; /* Keeps footer at bottom */
+    margin-top: auto;
+    width: 100%; 
+    padding-top: 500px; /* Moves footer down */
+    text-align: center; /* Centers text */
+    margin-right: 40px; /* Adds slight right margin */
+}
+
+/* Styles footer text and links */
+footer p, footer a {
+    color: white; /* White text */
+    text-decoration: none; /* Removes link underlines */
+    font-size: 18px; /* Adjusts font size */
+    padding-inline: 30px; /* Adds space between links */
+    margin: 0 20px; /* Adds spacing */
+}
+
+/* Applies font styles to headings and footer */
+h1, footer {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900; /* Bold text */
+    font-style: normal;
+    text-transform: uppercase; /* Capitalizes text */
+}
+
